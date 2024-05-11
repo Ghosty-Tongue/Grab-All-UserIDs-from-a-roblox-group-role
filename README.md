@@ -29,7 +29,7 @@ cd roblox-group-role-userid-collector
 
 3. Run the script:
 
-python roblox_group_role_userid_collector.py
+python grab.py
 
 4. Follow the on-screen instructions to enter the group ID and select the role.
 5. Optionally, choose to save the user IDs to a text file.
