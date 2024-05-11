@@ -53,8 +53,7 @@ def get_all_user_ids_for_role(group_id, role_id):
 def save_user_ids_to_file(role_name, group_id, user_ids):
     filename = f"{role_name}_{group_id}.txt"
     with open(filename, "w") as file:
-        for user_id in user_ids:
-            file.write(str(user_id) + "\n")
+        file.write(",".join(map(str, user_ids)))
     print(f"User IDs have been saved to '{filename}'")
 
 group_id = get_group_id()
